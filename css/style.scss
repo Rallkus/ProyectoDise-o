@@ -1,5 +1,8 @@
 $break-small: 400px;
 
+body{
+    background-color: rgb(220, 238, 220);
+}
 nav{
     background-color:#333;
     ul{
@@ -17,6 +20,7 @@ nav{
             float: left;
         }
         a{
+            font-family: 'Roboto', sans-serif;
             display: block;
             color: white;
             text-align: center;
