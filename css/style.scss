@@ -1,0 +1,34 @@
+$break-small: 400px;
+
+nav{
+    background-color:#333;
+    ul{
+         
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li {
+        @media screen and (max-width: $break-small){
+            float: center;
+        }
+        @media screen and (min-width: $break-small){
+            float: left;
+        }
+        a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: rgb(58, 97, 204);
+        }
+        
+    }
+    .active {
+        background-color: rgb(50, 163, 71);
+    }
+}

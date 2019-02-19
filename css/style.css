@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 400px) {
+  nav li {
+    float: center;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  nav li {
+    float: left;
+  }
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #3a61cc;
+}
+
+nav .active {
+  background-color: #32a347;
+}
+/*# sourceMappingURL=style.css.map */
