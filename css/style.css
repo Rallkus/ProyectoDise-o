@@ -13,15 +13,27 @@ body header nav ul {
   overflow: hidden;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
+  body header nav .appName {
+    float: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body header nav .appName {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
   body header nav li {
     float: center;
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
   body header nav li {
-    float: left;
+    float: right;
   }
 }
 
@@ -64,9 +76,9 @@ body section img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   body section img {
-    height: 10em;
+    height: 15em;
   }
 }
 

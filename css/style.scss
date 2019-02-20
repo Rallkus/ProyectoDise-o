@@ -1,4 +1,4 @@
-$break-small: 400px;
+$break-small: 480px;
 $break-medium: 720px;
 $break-big: 920px;
 $break-huge: 1320px;
@@ -15,12 +15,20 @@ body{
         padding: 0;
         overflow: hidden;
     }
-    li {
+    .appName{
         @media screen and (max-width: $break-small){
             float: center;
         }
         @media screen and (min-width: $break-small){
             float: left;
+        }
+    }
+    li {
+        @media screen and (max-width: $break-small){
+            float: center;
+        }
+        @media screen and (min-width: $break-small){
+            float: right;
         }
         a{
             font-family: 'Roboto', sans-serif;
@@ -53,7 +61,7 @@ body{
                 height: 25em;
             }
             @media screen and (max-width: $break-small){
-                height: 10em;
+                height: 15em;
             }
         }
         
