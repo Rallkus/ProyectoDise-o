@@ -44,7 +44,30 @@ body header nav .active {
 
 body section img {
   width: 100%;
-  height: 30em;
+}
+
+@media screen and (min-width: 1320px) {
+  body section img {
+    height: 40em;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1320px) {
+  body section img {
+    height: 30em;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 720px) {
+  body section img {
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body section img {
+    height: 10em;
+  }
 }
 
 footer {
