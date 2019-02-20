@@ -1,0 +1,12 @@
+.flexboxContact{
+    display: flex;
+    flex-direction: column;;
+}
+.flexboxContact > section{
+    width: 99%;
+}
+
+.jomuoru{
+    fill:var(--color--red);
+    font-size: 10vw;
+	}
