@@ -24,6 +24,18 @@ input[type=text], input[type=email], input[type=number]{
     border-radius: 10px;
 }
 
+textarea{
+    margin: 15px; 
+    height: 140px; 
+    width: 181px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    border: 2px solid salmon;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 480px) {
   input[type=text], input[type=email], input[type=number] {
     height: 1em;
