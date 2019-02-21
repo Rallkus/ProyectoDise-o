@@ -60,6 +60,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 8px 5px 5px rgb(87, 124, 77);
 }
 
 input[type=submit]:hover {
