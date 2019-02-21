@@ -1,7 +1,7 @@
 TODOS
 - Añadir ofertas de empleo de forma simple con grid al home debajo de la imagen
 - Hacer responsive el svg del contact
-- Mejorar el botón de submit del formulario y hacerlo responsive
+- Hacer responsive el botón de submit
 - Mejorar los inputs del formulario
 - Añadir un about que tenga texto responsive
 - Añadir variables css al fichero contact.css

@@ -83,11 +83,17 @@ body section img {
 }
 
 footer {
-  float: right;
+  width: 100%;
+  background-color: #c6ddb7;
+  text-align: right;
   margin-right: 2px;
 }
 
 footer i {
   padding: 10px;
+}
+
+footer h3 {
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

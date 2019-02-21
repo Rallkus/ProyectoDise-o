@@ -35,4 +35,17 @@ input[type=text], input[type=email], input[type=number]{
 .contact{
     fill:black;
     font-size: 10vw;
-	}
+    }
+    
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}

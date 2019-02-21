@@ -7,46 +7,46 @@ body{
     background-color: rgb(220, 238, 220);
     header{
         nav{
-    background-color:#333;
-    ul{
-         
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    .appName{
-        @media screen and (max-width: $break-small){
-            float: center;
+            background-color:#333;
+            ul{
+                
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .appName{
+                @media screen and (max-width: $break-small){
+                    float: center;
+                }
+                @media screen and (min-width: $break-small){
+                    float: left;
+                }
+            }
+            li {
+                @media screen and (max-width: $break-small){
+                    float: center;
+                }
+                @media screen and (min-width: $break-small){
+                    float: right;
+                }
+                a{
+                    font-family: 'Roboto', sans-serif;
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 20px 20px;
+                    text-decoration: none;
+                }
+                a:hover {
+                    background-color: rgb(58, 97, 204);
+                }
+                
+            }
+            .active {
+                background-color: rgb(50, 163, 71);
+            }
         }
-        @media screen and (min-width: $break-small){
-            float: left;
-        }
-    }
-    li {
-        @media screen and (max-width: $break-small){
-            float: center;
-        }
-        @media screen and (min-width: $break-small){
-            float: right;
-        }
-        a{
-            font-family: 'Roboto', sans-serif;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 20px 20px;
-            text-decoration: none;
-        }
-        a:hover {
-            background-color: rgb(58, 97, 204);
-        }
-        
-    }
-    .active {
-        background-color: rgb(50, 163, 71);
-    }
-}
     }
     section{
         img{
@@ -69,9 +69,14 @@ body{
 }
 
 footer{
-    float: right;
+    width: 100%;
+    background-color: rgb(198, 221, 183);
+    text-align: right;
     margin-right: 2px;
     i{
         padding: 10px;
+    }
+    h3{
+        margin: 10px;
     }
 }
