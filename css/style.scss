@@ -9,7 +9,9 @@ body{
         nav{
             background-color:#333;
             ul{
-                
+                @media screen and (max-width: $break-small){
+                    transform: rotate(180deg);
+                } 
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -26,6 +28,7 @@ body{
             li {
                 @media screen and (max-width: $break-small){
                     float: center;
+                    transform: rotate(-180deg);
                 }
                 @media screen and (min-width: $break-small){
                     float: right;
@@ -48,7 +51,63 @@ body{
             }
         }
     }
+    @media screen and (min-width:$break-medium){
+            .col1 {
+                width: 30%;
+                margin-right: 5%;
+                float:left;
+            }
+            .col2 {
+                width: 25%;
+                margin-right: 5%;
+                float:left;
+            }
+            .col3 {
+                width: 30%;
+                margin-right: 5%;
+                float: left;
+            }
+        }
+
+    @media screen and (min-width:$break-small) and (max-width: $break-medium){
+        .col1 {
+            width: 55%;
+            margin-right: 5%;
+            float:left;
+        }
+        .col2 {
+            width: 35%;
+            margin-right: 5%;
+            float:right;
+        }
+        .col3 {
+            width: 100%;
+            margin-right: 5%;
+            float: none;
+        }
+    }
+    
+    @media screen and (max-width:$break-small){
+        .col1, .col2, .col3 {
+            float: none;
+            width: 100%;
+            margin: 0;
+        }
+    }
     section{
+        p{
+            font-family: 'Open Sans', sans-serif;
+            @media screen and (min-width:$break-medium){
+                font-size: 18px;
+            }
+            @media screen and (min-width:$break-small) and (max-width: $break-medium){
+                font-size: 22px;
+            }
+            @media screen and (max-width:$break-small){
+                font-size: 25px;
+            }
+            
+        }
         img{
             width: 100%;
             @media screen and (min-width: $break-huge){
@@ -69,6 +128,7 @@ body{
 }
 
 footer{
+    clear: both;
     width: 100%;
     background-color: rgb(198, 221, 183);
     text-align: right;

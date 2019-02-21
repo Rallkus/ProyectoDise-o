@@ -14,6 +14,13 @@ body header nav ul {
 }
 
 @media screen and (max-width: 480px) {
+  body header nav ul {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
   body header nav .appName {
     float: center;
   }
@@ -28,6 +35,8 @@ body header nav ul {
 @media screen and (max-width: 480px) {
   body header nav li {
     float: center;
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
 }
 
@@ -52,6 +61,72 @@ body header nav li a:hover {
 
 body header nav .active {
   background-color: #32a347;
+}
+
+@media screen and (min-width: 720px) {
+  body .col1 {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+  }
+  body .col2 {
+    width: 25%;
+    margin-right: 5%;
+    float: left;
+  }
+  body .col3 {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  body .col1 {
+    width: 55%;
+    margin-right: 5%;
+    float: left;
+  }
+  body .col2 {
+    width: 35%;
+    margin-right: 5%;
+    float: right;
+  }
+  body .col3 {
+    width: 100%;
+    margin-right: 5%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body .col1, body .col2, body .col3 {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+body section p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+  body section p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  body section p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body section p {
+    font-size: 25px;
+  }
 }
 
 body section img {
@@ -83,6 +158,7 @@ body section img {
 }
 
 footer {
+  clear: both;
   width: 100%;
   background-color: #c6ddb7;
   text-align: right;
