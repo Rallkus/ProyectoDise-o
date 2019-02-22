@@ -19,15 +19,6 @@ body section p {
   font-size: 25px;
   margin-left: 75px;
   margin-right: 75px;
-  /* @media screen and (min-width:$break-medium){
-                font-size: 18px;
-            }
-            @media screen and (min-width:$break-small) and (max-width: $break-medium){
-                font-size: 22px;
-            }
-            @media screen and (max-width:$break-small){
-                font-size: 25px;
-            } */
 }
 
 footer {
