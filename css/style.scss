@@ -4,7 +4,6 @@ $break-big: 920px;
 $break-huge: 1320px;
 
 body{
-    margin: 0px;
     background-color: rgb(220, 238, 220);
     header{
         nav{
@@ -95,7 +94,50 @@ body{
             margin: 0;
         }
     }
+    .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgb(156, 156, 206);
+            padding: 10px;
+        }
     section{
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164);
+            transition: 0.3s;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: auto;
+            .imgCard{
+                width: 100%;
+                @media screen and (min-width: $break-huge){
+                    height: 23em;
+                }
+                @media screen and (min-width: $break-big) and (max-width: $break-huge){
+                    height: 14em;
+                }
+                @media screen and (max-width: $break-big) and (min-width: $break-medium){
+                    height: 12em;
+                }
+                @media screen and (min-width: $break-small) and (max-width: $break-medium){
+                    height: 10em;
+                }
+                @media screen and (max-width: $break-small){
+                    height: 8em;
+                }
+            }
+        }
+
+            .card:hover {
+            box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.2);
+        }
+
+            .container {
+                padding: 2px 16px;
+                background-color: rgb(61, 57, 57);
+                color: rgb(182, 204, 212);
+        }
         p{
             font-family: 'Open Sans', sans-serif;
             @media screen and (min-width:$break-medium){

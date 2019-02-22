@@ -1,5 +1,4 @@
 body {
-  margin: 0px;
   background-color: #dceedc;
 }
 
@@ -106,6 +105,72 @@ body header nav .active {
     width: 100%;
     margin: 0;
   }
+}
+
+body .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  background-color: #9c9cce;
+  padding: 10px;
+}
+
+body section .card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+body section .card .imgCard {
+  width: 100%;
+}
+
+@media screen and (min-width: 1320px) {
+  body section .card .imgCard {
+    height: 23em;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1320px) {
+  body section .card .imgCard {
+    height: 14em;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 720px) {
+  body section .card .imgCard {
+    height: 12em;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  body section .card .imgCard {
+    height: 10em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body section .card .imgCard {
+    height: 8em;
+  }
+}
+
+body section .card:hover {
+  -webkit-box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+body section .container {
+  padding: 2px 16px;
+  background-color: #3d3939;
+  color: #b6ccd4;
 }
 
 body section p {
