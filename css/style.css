@@ -101,9 +101,9 @@ body header nav .active {
 
 @media screen and (max-width: 480px) {
   body .col1, body .col2, body .col3 {
-    float: none;
     width: 100%;
-    margin: 0;
+    margin-right: 0;
+    float: none;
   }
 }
 

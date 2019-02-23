@@ -2,12 +2,21 @@ $break-small: 480px;
 $break-medium: 720px;
 $break-big: 920px;
 $break-huge: 1320px;
+$body-background-color: rgb(220, 238, 220);
+$footer-background-color:rgb(198, 221, 183);
+$navbar-background-color:#333;
+
+@mixin columna ($width, $marginRight, $float){
+    width: $width;
+    margin-right: $marginRight;
+    float:$float;
+}
 
 body{
-    background-color: rgb(220, 238, 220);
+    background-color: $body-background-color;
     header{
         nav{
-            background-color:#333;
+            background-color:$navbar-background-color;
             ul{
                 @media screen and (max-width: $break-small){
                     transform: rotate(180deg);
@@ -53,45 +62,31 @@ body{
     }
     @media screen and (min-width:$break-medium){
             .col1 {
-                width: 30%;
-                margin-right: 5%;
-                float:left;
+                @include columna(30%,5%, left);
             }
             .col2 {
-                width: 25%;
-                margin-right: 5%;
-                float:left;
+                @include columna(25%,5%, left);
             }
             .col3 {
-                width: 30%;
-                margin-right: 5%;
-                float: left;
+                @include columna(30%,5%, left);
             }
         }
 
     @media screen and (min-width:$break-small) and (max-width: $break-medium){
         .col1 {
-            width: 55%;
-            margin-right: 5%;
-            float:left;
+            @include columna(55%,5%, left);
         }
         .col2 {
-            width: 35%;
-            margin-right: 5%;
-            float:right;
+            @include columna(35%,5%, right);
         }
         .col3 {
-            width: 100%;
-            margin-right: 5%;
-            float: none;
+            @include columna(100%,5%, none);
         }
     }
     
     @media screen and (max-width:$break-small){
         .col1, .col2, .col3 {
-            float: none;
-            width: 100%;
-            margin: 0;
+            @include columna(100%,0, none);
         }
     }
     .grid-container {
@@ -173,7 +168,7 @@ body{
 footer{
     clear: both;
     width: 100%;
-    background-color: rgb(198, 221, 183);
+    background-color: $footer-background-color;
     text-align: right;
     margin-right: 2px;
     i{
